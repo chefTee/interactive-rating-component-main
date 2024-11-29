@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: auto;
+}
+img{
+    display: block;
+    max-width: 100%;
+    line-height: 0;
+}
+input,
+button,
+select{
+    font: inherit;
+}
+:root{
+    --main-black: hsl(216, 12%, 8%);
+    --light-black:hsl(213, 19%, 18%);
+    --white: hsl(0, 0%, 100%);
+    --grey-black: hsl(213, 19%, 24%);
+    --orange: hsl(25, 97%, 53%);
+}
+body{
+    font-family: "Work Sans", serif;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: var(--main-black);
+}
+main.hide{
+    display: none;
+}
+.rating-page{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.rating-container{
+    padding: 1.5rem;
+    max-width: 400px;
+    width: fit-content;
+    background-color: var(--light-black);
+    border-radius: 10px;
+}
+.rating-container .logo-container{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--grey-black);
+    margin-bottom: 5%;
+}
+.logo-container .star-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+.rating-content .title{
+    color: var(--white);
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+.rating-content .summary{
+    color: var(--white);
+    opacity: .5;
+    margin-bottom: 8%;
+    line-height: 1.5rem;
+}
+.rating-buttons{
+    margin-bottom: 2rem;
+}
+.rating-buttons .rate-btn{
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    color: var(--white);
+    opacity: .5;
+    background-color: var(--grey-black);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.rating-buttons .rate-btn:hover{
+    background-color: var(--orange);
+    color: var(--main-black);
+    font-weight: 600;
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+}
+.rating-buttons:last-child{
+    margin-right: 0;
+}
+.submit-btn{
+    max-width: 100%;
+}
+.submit-btn button{
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--main-black);
+    background-color: var(--orange);
+    border: none;
+    outline: none;
+    padding-block: .6rem;
+    border-radius: 666px;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+.submit-btn button:hover{
+    color: var(--main-black);
+    background-color: var(--white);
+}
+
+
+
+/* THANK YOU PAGE */
+.thank-you-page{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.thank-you-container{
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    max-width: 400px;
+    width: fit-content;
+    background-color: var(--light-black);
+    border-radius: 10px;
+}
+.thank-you-container .thank-you-image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.3rem;
+}
+.thank-you-image img{
+    width: 40%;
+}
+.thank-you-container .result{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--orange);
+    background-color: var(--grey-black);
+    width: fit-content;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    font-size: .8em;
+    font-weight: 600;
+    border-radius: 666px;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+.thank-you-content{
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+}
+.thank-you-content .title{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+.thank-you-content .summary{
+    font-size: 1em;
+    opacity: .5;
+    line-height: 1.5rem;
+}
+
+@media(max-width: 500px){
+    .rating-container{
+        padding: 1rem;
+        max-width: 90%;
+        width: fit-content;
+    }
+    .thank-you-container{
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        max-width: 90%;
+        width: fit-content;
+        background-color: var(--light-black);
+        border-radius: 10px;
+    }
+    
+}
+@media(max-width: 430px){
+    .rating-buttons .rate-btn{
+        width: 45px;
+        height: 45px;
+        margin-right: .5rem;
+    }
+}
+@media(max-width: 360px){
+    .rating-buttons .rate-btn{
+        width: 40px;
+        height: 40px;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
