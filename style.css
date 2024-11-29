@@ -178,7 +178,7 @@ main.hide{
     body{
         min-height: 0;
         max-height: 100vh;
-        height: 100vh;
+        height: 100%;
     }
     .rating-container{
         padding: 1rem;
