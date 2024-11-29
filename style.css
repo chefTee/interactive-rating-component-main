@@ -184,13 +184,17 @@ main.hide{
         padding: 1rem;
         max-width: 90%;
         width: fit-content;
+        max-height: 100vh;
+        margin: auto 0;
     }
     .thank-you-container{
         padding: 1.5rem 1rem 1.5rem 1rem;
         max-width: 90%;
         width: fit-content;
+        max-height: 100vh;
         background-color: var(--light-black);
         border-radius: 10px;
+        margin: auto 0;
     }
     
 }
