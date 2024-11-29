@@ -175,6 +175,11 @@ main.hide{
 }
 
 @media(max-width: 500px){
+    body{
+        min-height: 0;
+        max-height: 100vh;
+        height: 100vh;
+    }
     .rating-container{
         padding: 1rem;
         max-width: 90%;
